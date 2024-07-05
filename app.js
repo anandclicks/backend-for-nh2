@@ -9,8 +9,8 @@ app.use(core())
 const transporter = nodemailer.createTransport({
   service : 'Gmail',
   auth : {
-    user : 'kaminahacker2004@gmail.com',
-    pass : 'jjrfaaompigkyjhg'
+    user : 'nh2stays@gmail.com',
+    pass : 'eyowxwmrmhoisaah'
   }
 })
 
@@ -31,8 +31,8 @@ app.post('/',async(req,res)=> {
   const {name,mobileNumber,propertyName,roomSharing} = req.body
   console.log(req.body)
   let mailOption = {
-    from : 'kaminahacker2004@gmail.com',
-    to : 'puspanand94@gmail.com',
+    from : 'nh2stays@gmail.com',
+    to : 'info@nh2stays.com',
     subject  : "New query",
     text : `
             Name  : ${name}
